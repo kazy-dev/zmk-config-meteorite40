@@ -66,6 +66,11 @@
             key-positions = <17 19>; /* K + - (on layer 2) */
             layers = <2>;
         };
+
+        screenshot4 {
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            key-positions = <25 26>;
+        };
     };
 
     keymap {
@@ -75,15 +80,15 @@
         win_default_layer {
             display-name = "BASE";
             bindings = <
-&kp Q             &kp W             &kp E             &kp R  &kp T           &kp Y        &kp U            &kp I       &kp O  &kp P
-&kp A             &kp S             &kp D             &kp F  &kp G           &kp H        &kp J            &kp K       &kp L  &kp ENTER
-&mt LEFT_SHIFT Z  &kp X             &kp C             &kp V  &kp B           &none        &none            &kp N       &kp M  &kp COMMA  &kp DOT  &lt 4 SLASH
-&kp LEFT_ALT      &kp LEFT_COMMAND  &lt 1 LANGUAGE_1  &mo 2  &kp LEFT_SHIFT  &lt 2 SPACE  &lt 3 BACKSPACE  &kp ESCAPE
+&kp Q             &kp W             &kp E             &kp R  &kp T           &kp Y          &kp U            &kp I       &kp O  &kp P
+&kp A             &kp S             &kp D             &kp F  &kp G           &kp H          &kp J            &kp K       &kp L  &kp ENTER
+&mt LEFT_SHIFT Z  &kp X             &kp C             &kp V  &kp B           &kp LS(LG(H))  &kp LS(LG(J))    &kp N       &kp M  &kp COMMA  &kp DOT  &lt 4 SLASH
+&kp LEFT_ALT      &kp LEFT_COMMAND  &lt 1 LANGUAGE_1  &mo 2  &kp LEFT_SHIFT  &lt 2 SPACE    &lt 3 BACKSPACE  &kp ESCAPE
             >;
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -100,7 +105,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -117,7 +122,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -134,7 +139,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -151,7 +156,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
